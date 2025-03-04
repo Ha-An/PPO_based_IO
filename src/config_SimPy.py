@@ -31,7 +31,7 @@ import shutil
 # OUTPUT: Output WIP or Product
 # PROCESS_COST: Processing cost of the process [$/unit]
 # PROCESS_STOP_COST: Penalty cost for stopping the process [$/unit]
-'''
+
 
 # Assembly Process 1
 
@@ -98,7 +98,7 @@ P = {0: {"ID": 0, "PRODUCTION_RATE": 2, "INPUT_TYPE_LIST": [I[1], I[2]], "QNTY_F
          "OUTPUT": I[4], "PROCESS_COST": 1, "PROCESS_STOP_COST": 2},
      1: {"ID": 1, "PRODUCTION_RATE": 2, "INPUT_TYPE_LIST": [I[2], I[3], I[4]], "QNTY_FOR_INPUT_ITEM": [1, 1, 1],
          "OUTPUT": I[0], "PROCESS_COST": 1, "PROCESS_STOP_COST": 2}}
-
+'''
 '''
 # Assembly Process 3
 I = {0: {"ID": 0, "TYPE": "Product",      "NAME": "PROD",
@@ -171,7 +171,7 @@ INVEN_LEVEL_MIN = 0
 INVEN_LEVEL_MAX = 20  # Capacity limit of the inventory [units]
 
 # Simulation
-SIM_TIME = 100000  # 200 [days] per episode
+SIM_TIME = 10  # 200 [days] per episode
 
 # Count for material inventory
 MAT_COUNT = 0
